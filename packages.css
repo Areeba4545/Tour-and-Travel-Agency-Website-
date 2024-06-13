@@ -1,0 +1,197 @@
+
+:root
+{
+ --main-color:#8e44ad;
+ --black:#222;
+ --white:#222;
+ --border: 1rem solid var(--black);
+ --box-shadow: 0 .5rem 1rem rgb(0,0,.1);
+ --text-shadow:0  1.5rem 3rem  rgb(0,0,.3);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+/*Header CSS */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 2px gray;
+    align-items: center;
+    justify-content: space-between;
+}
+                                                          /* Navbar Editing start*/
+ .header a{
+    text-decoration: none;
+ }
+.header .logo {
+    
+    color: var(--black);
+    margin-left: 2rem;
+    font-size: 1.8rem;
+
+}
+/* Media query for max-width: 768px */           
+@media (max-width: 768px) {                    
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+
+    }
+    .header .navbar a {
+        display: block;
+        text-align: center;
+    }
+}
+.container-class
+{
+width: fit-content;
+height: max-content;
+margin: 2rem;
+display: block;
+block-size: 48rem;
+box-shadow: 3px 3px 3px 3px gray;
+padding: 0.8rem;
+border-radius: 0.8rem;
+}
+.navbar
+{
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+.navbar a
+{
+    margin-left: 1.1rem;
+    font-weight: bolder;
+    color: black;
+    font-size: large;
+}
+#main-img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+}
+.container-class img
+{
+    width: 300px;
+    height: 300px;
+}
+.container-class:hover
+{
+    scale: 1.1;
+    transition: all ease 1s;
+}
+button
+{
+    height: 3rem;
+    width: 6rem;
+    background-color: black;
+    color: white;
+    margin: 1rem;
+    margin-left: 30%;
+   
+}
+.container-class a{
+    text-decoration: none;
+    color: rgb(246, 246, 246);
+}
+.container-class h3{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    font-size: large;
+}
+.main-heading
+{
+    margin-top: 3rem;
+    margin-left: 32%;
+    margin-bottom: 1.8rem;
+}
+section
+{
+    display: flex;
+}
+p{
+    text-align: center;
+}
+
+/*Footor CSS*/
+
+.footer {
+    background:linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url('footer\ bg\ \ pic.jpg');
+    background-position: center;
+    color: #f2f2f2;
+}
+.box-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+ 
+.Box{
+    display: flex;
+    margin: 0 5rem 0 5rem;
+    flex-direction: column; 
+    margin-top: 0.85rem;
+}
+.Box h3
+{
+    font-size: small;
+}
+.Box a
+{
+color: #f2f2f2;
+margin: 8px;
+text-decoration: none;
+font-size: 10px;
+}   
+.Box a:hover
+{
+color: #bbb;
+font-weight: bolder;
+scale: 1.2;
+}
+.credit {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 0.1rem solid rgb(30, 30, 30);
+    font-size: 1rem;
+    color: var(--black);
+}
+.credit span {
+    color: var(--main-color);
+}
+
+.author {
+    font-weight: bold;
+    color: #4200b5; /* Set your preferred color */
+}
+
