@@ -1,0 +1,497 @@
+:root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, 0.7);
+    --light-bg: #eee;
+    --border: 0.1rem solid var(--black);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body{
+    background-image: url('https://stock.adobe.com/images/landscape-scene-with-mountains-background-and-beautiful-natural-beauty-generative-ai/573872540');
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Webkit scrollbars */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+section {
+    padding: 5rem 10%;
+}
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+}
+                                                          /* Navbar Editing start*/
+ 
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--black); /* Fixed typo color*/
+}
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+/* Media query for max-width: 768px */           
+@media (max-width: 768px) {                    
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+
+    }
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+   
+    /* Adjust the colors and direction as needed */
+    height: 60px; /* You can adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hwb(240 99% 1%); /* Text color for the navbar items */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header-img img
+{
+   object-fit: cover;
+   
+}
+
+                                                    /* Footer Editing End */
+
+ /* Media query for max-width: 1200px */
+@media (max-width: 1200px) {
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+/* Media query for max-width: 991px */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 3rem 2rem;
+    }
+}                                               /* menu_Button Editing start*/
+
+  body {
+   margin: 0;
+   padding: 0;
+  font-family: Arial, sans-serif; /* Use your preferred font family */
+    background-color: #f0f0f0;/* Background color for the entire page */
+  }
+.menu-container {
+    background-color: #fff; /* Background color for the menu */
+    display: none; /* Initially hide the menu */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.menu-button {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #000; /* Color of the menu button */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    transition: transform 0.2s linear;
+}
+
+.menu-button.open {
+    transform: rotate(180deg);
+}
+
+/* Media query for max-width: 450px */
+@media (max-width: 450px) {
+    .menu-button {
+        display: block;
+    }
+
+    .menu-container {
+        display: none;
+    }
+}
+
+                                                       /* menu_Button Editing start*/
+                                                       .image-column {
+                                                        text-align: left;
+                                                        padding-left: 100px;
+                                                        padding-top: 40px;
+                                                        margin-top: 20px;
+                                                        margin-left: 50px;
+                                                    }
+                                                    
+                                                    .text-column {
+                                                        text-align: left;
+                                                        padding-right: 70px;
+                                                     margin-left: -100px;
+                                                    }                                              
+.text-column
+{
+  margin: 100px 50px;
+}
+.text-column h4{
+    font-size: 4rem;
+    margin-left: 1.8rem;
+}
+.text-column p
+
+{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.two-column-container
+{
+    display: flex;
+    margin-left: 10%;
+}
+.image-column
+{
+    margin-right: 5rem;
+}
+.image-column img
+{
+    object-fit: cover;
+}
+.container-class
+{
+width: fit-content;
+height: 12rem;
+margin: 2rem;
+display: block;
+block-size: 48rem;
+box-shadow: 3px 3px 3px 3px gray;
+padding: 0.8rem;
+border-radius: 0.8rem;
+}
+.image-column
+{
+    width: 280px;
+    height: 250px;
+}
+img:hover
+{
+    scale: 1.1;
+    transition: 2s;
+}
+.content 
+{
+display: flex;
+flex-direction: column;
+width: fit-content;
+font-size: larger;
+
+}
+.content h2{
+    margin-top: 10px;
+    margin-left: 30%
+}
+.content p{
+    margin-top: 5px;
+}
+#length
+
+{
+    margin-left: 15%
+}
+.container-class
+{
+height: 51rem;
+}
+.container-class img
+{
+    width: 270px;
+    height: 270px;
+    margin-left: 10px;
+}
+.container-class :hover
+{
+    transition: all ease 1s;
+}
+button
+{
+    height: 3rem;
+    width: 10rem;
+    background-color: black;
+    color: white;
+    margin: 1rem;
+    margin-left: 30%;
+   
+}
+.container-class a{
+    text-decoration: none;
+    color: rgb(246, 246, 246);
+}
+.container-class h3{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+.main-heading
+{
+    margin-top: 3rem;
+    margin-left: 32%;
+    margin-bottom: 1.8rem;
+    font-size: 4rem;
+}
+section
+{
+    display: flex;
+}
+p{
+    text-align: center;
+}
+
+/*Slider for home page CSS*/
+*
+ {
+    box-sizing:border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.mySlides img{
+    height: 40rem;
+    object-fit: cover;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #070606;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.services
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+     margin-top: 3rem;
+}
+.services .fa-solid
+{
+   margin: 0.85rem;
+   margin-left: 2rem;
+   padding: 1rem;
+}
+.services .fa-brands
+{
+    margin: 0.85rem;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+.icon{
+  margin: 0.8rem;
+  background-color: #c963f4;
+  height: 8rem;
+  width: 10rem;
+  border-radius: 0.8rem;
+  position: relative;
+}
+.icon {
+    transition: background-color 1s;
+}
+.icon:hover {
+    background-color: purple;
+    scale: 1.1;
+}
+.icon span
+{
+position: absolute;
+top: 70%;
+left: 15%;
+padding: 0.5rem 1rem 0 1rem;
+font-size: larger;
+font-weight: bolder;
+}
+
+  /* Navbar Editing END*/  
+
+    /* Footer Editing start */
+    .footer {
+        background:linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)), url('footer\ bg\ \ pic.jpg');
+       background-position: center;
+       color: #f2f2f2;
+    }
+    .box-container
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5rem;
+    }
+     
+    .Box{
+        display: flex;
+        flex-direction: column; 
+        margin: 0 7rem 0 7rem;
+    }
+.Box a
+{
+    color: #f2f2f2;
+    margin: 10px;
+    text-decoration: none;
+}   
+.Box a:hover
+{
+    color: #bbb;
+    font-weight: bolder;
+    scale: 1.2;
+}
+    .credit {
+        text-align: center;
+        padding-top: 3rem;
+        margin-top: 3rem;
+        border-top: 0.1rem solid var(--light-black);
+        font-size: 2rem;
+        color: var(--black);
+    }
+    .credit span {
+        color: var(--main-color);
+    }
+    
+    .author {
+        font-weight: bold;
+        color: #4200b5; /* Set your preferred color */
+    }
+
